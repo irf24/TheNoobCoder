@@ -1,0 +1,64 @@
+*{
+    margin:0px;
+    box-sizing: border-box;
+}
+.topbar{
+    padding:2%;
+    position:sticky;
+    top:0px;
+    display:flex;
+    justify-content:center;
+    background-color:rgb(42, 21, 54);
+    color:white;
+    box-shadow:0px 5px 5px black;
+    z-index: 10;
+}
+.title{
+    font-size:24px;
+}
+span.mouse{
+    vertical-align: middle;
+    margin-left:2px;
+}
+.header{
+    text-align:center;
+    padding-top:5%;
+    padding-bottom:5%;
+    background-color:rgb(42, 21, 54);
+    color:white;
+}
+.header .title{
+    font-family:"Nova Slim";
+    font-size: 3.5em;;
+}
+
+.header p{
+    font-family:"Open Sans";
+    font-size : 1.5em;
+}
+.wrap{
+    background-color:rgb(42, 21, 54);
+    overflow:hidden;
+}
+.container{
+    overflow:hidden;
+}
+.section .heading{
+    font-family: "Google Sans";
+    font-size:1.8em;
+    padding:5%;
+    text-align: center;
+}
+.card-body{
+    display:flex;
+    height:200px;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    font-size:1.2em;
+}
+.card-body:hover{
+    box-shadow:0px 0px 20px gray;
+    font-size:1.8em;
+    transition:0.5s
+}
