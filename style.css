@@ -20,7 +20,7 @@ span.mouse{
     vertical-align: middle;
     margin-left:2px;
 }
-.header{
+.header,.footer{
     text-align:center;
     padding-top:5%;
     padding-bottom:5%;
@@ -40,25 +40,53 @@ span.mouse{
     background-color:rgb(42, 21, 54);
     overflow:hidden;
 }
-.container{
-    overflow:hidden;
-}
 .section .heading{
-    font-family: "Google Sans";
-    font-size:1.8em;
     padding:5%;
     text-align: center;
 }
+
+.section .heading .title{
+    font-family: "Google Sans";
+    font-size:1.8em;
+}
+.title::after{
+    display:block;
+    content:"";
+    width:30%;
+    height:2px;
+    margin:10px auto;
+    background-color:rgb(42, 21, 54);
+
+}
+
+.card{
+    border:none !important;
+    border-radius :8px !important;
+    padding:2%;
+    background-color:white !important;
+}
 .card-body{
     display:flex;
-    height:200px;
     justify-content:center;
     align-items:center;
-    color:white;
-    font-size:1.2em;
+    color:rgb(85, 84, 83);
+    font-size:2.5vw;
+    background-color:white;
+    border:2px solid rgb(85, 84, 83);
+    border-radius :8px !important;
 }
 .card-body:hover{
-    box-shadow:0px 0px 20px gray;
-    font-size:1.8em;
-    transition:0.5s
+    border:2px solid rgb(255, 127, 54);
+    color: rgb(255, 127, 54);
+    box-shadow: 0 0 10px rgb(255, 127, 54);
+    text-shadow: 0 0 10px rgb(255, 127, 54);
+}
+.about{
+    display:flex;
+    justify-content:center;
+    padding:5%;
+}
+.img-coding{
+    max-width:100%;
+    height:auto;
 }
