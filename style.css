@@ -8,9 +8,9 @@
     top:0px;
     display:flex;
     justify-content:center;
-    background-color:rgb(42, 21, 54);
+    background-color:#00BFA6;
     color:white;
-    box-shadow:0px 5px 5px black;
+    box-shadow:0px 2px 5px black;
     z-index: 10;
 }
 .title{
@@ -24,7 +24,7 @@ span.mouse{
     text-align:center;
     padding-top:5%;
     padding-bottom:5%;
-    background-color:rgb(42, 21, 54);
+    background-color:#00BFA6;
     color:white;
 }
 .header .title{
@@ -37,26 +37,19 @@ span.mouse{
     font-size : 1.5em;
 }
 .wrap{
-    background-color:rgb(42, 21, 54);
+    background-color:#00BFA6;
     overflow:hidden;
 }
-.section .heading{
+.section, .card-deck{
     padding:5%;
+}
+.section .heading{
     text-align: center;
 }
 
 .section .heading .title{
     font-family: "Google Sans";
     font-size:1.8em;
-}
-.title::after{
-    display:block;
-    content:"";
-    width:30%;
-    height:2px;
-    margin:10px auto;
-    background-color:rgb(42, 21, 54);
-
 }
 
 .card{
@@ -70,16 +63,16 @@ span.mouse{
     justify-content:center;
     align-items:center;
     color:rgb(85, 84, 83);
-    font-size:2.5vw;
+    font-size:1.2em;
     background-color:white;
-    border:2px solid rgb(85, 84, 83);
-    border-radius :8px !important;
 }
-.card-body:hover{
-    border:2px solid rgb(255, 127, 54);
-    color: rgb(255, 127, 54);
-    box-shadow: 0 0 10px rgb(255, 127, 54);
-    text-shadow: 0 0 10px rgb(255, 127, 54);
+.card{
+    box-shadow : 0 0 2px gray;
+}
+.card:hover{
+    box-shadow : 0 0 10px gray;
+    color: #00BFA6;
+    transition:ease-out 0.3s;
 }
 .about{
     display:flex;
@@ -89,4 +82,7 @@ span.mouse{
 .img-coding{
     max-width:100%;
     height:auto;
+}
+.card-img-top{
+    height:100px;
 }
