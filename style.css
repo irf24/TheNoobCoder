@@ -18,6 +18,7 @@ Noto Color Emoji";
 }
 a{
     text-decoration:none !important;
+    color:gray !important;
 }
 
 /*--------------------- top bar---------------------- */
@@ -87,7 +88,6 @@ span.mouse{
     display:flex;
     justify-content:center;
     align-items:center;
-    color:rgb(85, 84, 83);
     font-size:1.2em;
     background-color:white;
 }
@@ -97,9 +97,7 @@ span.mouse{
 .card:hover{
     box-shadow : 0 0 10px gray;
     transition:ease-out 0.3s;
-}
-.card-body:hover{
-    color:#502eb8;
+    color:#502eb8 !important;
 }
 .about{
     display:flex;
@@ -117,7 +115,7 @@ span.mouse{
 
 /*-------------sidebar-----------------*/
 .sidebar-left,.sidebar-right{
-    height:100vh;
+    min-height:100vh;
 }
 .sidebar-left{
     border-right:0.5px groove gray; 
