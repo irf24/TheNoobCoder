@@ -98,6 +98,9 @@ span.mouse{
     box-shadow : 0 0 10px gray;
     transition:ease-out 0.3s;
 }
+.card-body:hover{
+    color:#502eb8;
+}
 .about{
     display:flex;
     justify-content:center;
