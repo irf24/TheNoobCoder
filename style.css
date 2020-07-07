@@ -27,7 +27,7 @@ a{
     top:0px;
     display:flex;
     justify-content:center;
-    background-color:#6a47d1;
+    background-color:#502eb8;
     color:white;
     box-shadow:0px 2px 5px black;
     z-index: 10;
@@ -46,10 +46,10 @@ span.mouse{
     text-align:center;
     padding-top:5%;
     padding-bottom:5%;
-    color:#6a47d1;
+    color:#502eb8;
 }
 .footer{
-    background-color:#6a47d12f;
+    background-color:#502eb82f;
 }
 .header .title{
     font-family:"Nova Slim";
@@ -143,10 +143,8 @@ span.mouse{
      max-width:100%;
      padding:4%;
      display:flex;
-     background-color:#6a47d12f;
+     background-color:#502eb82f;
      flex-direction:column;
      justify-content:center;
      align-items:center;
  }
-
-
