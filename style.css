@@ -47,13 +47,11 @@ span.mouse{
     padding-top:5%;
     padding-bottom:5%;
     color:#502eb8;
-}
-.footer{
     background-color:#502eb82f;
 }
 .header .title{
     font-family:"Nova Slim";
-    font-size: 3.5em;;
+    font-size: 3.5em;
 }
 
 .header p{
@@ -65,6 +63,7 @@ span.mouse{
 
 .wrap{
     overflow:hidden;
+    background-color:#502eb82f;
 }
 .section, .card-deck{
     padding:5%;
@@ -148,3 +147,5 @@ span.mouse{
      justify-content:center;
      align-items:center;
  }
+
+
