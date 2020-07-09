@@ -1,8 +1,8 @@
+
 a{
     text-decoration:none !important;
     color:gray !important;
 }
-
  .topbar {
     font-size:24px;
     padding:1%;
@@ -14,9 +14,9 @@ a{
       color:white;
       box-shadow:0px 2px 5px black;
     }
-  
-    
-    
+    .link{
+      color:white !important;
+    }
     @media (max-width: 991.98px) {
       .topbar {
         padding-right: .4rem;
@@ -53,10 +53,20 @@ a{
     .bd-content {
       -ms-flex-order: 1;
       order: 1;
+      padding:5%;
     }
     
   
     /*-------body-----------------*/
+  .section{
+    border-top-left-radius:5vh;
+    border-top-right-radius:5vh;
+    background-color: white;
+  }
+  .content-wrapper{
+    padding:0px;
+    background-color:#502eb82f;
+  }
   .heading{
       text-align: center;
   }
@@ -195,6 +205,11 @@ a{
       .sidebar-toggler:hover{
         cursor:pointer;
       }
+      .body-blur{
+        filter: blur(8px);
+        -webkit-filter: blur(8px);
+      
+      }
       @supports ((position: -webkit-sticky) or (position: sticky)) {
         
       }
@@ -210,22 +225,23 @@ a{
       left:0;
       transition:0.3s ease-out;
     }
-    .body-blur{
-      filter: blur(8px);
-      -webkit-filter: blur(8px);
     
-    }
     
     .doodle-wrapper,.footer{
       background-color:#502eb82f;
       overflow:hidden;
     }
+    .footer{
+      border-top-left-radius:5vh;
+    border-top-right-radius:5vh;
+    }
     .quote{
         max-width:100%;
-        padding:4%;
+        padding:3%;
         display:flex;
         background-color:#502eb82f;
         flex-direction:column;
         justify-content:center;
         align-items:center;
+        border-radius:10px;
     }
