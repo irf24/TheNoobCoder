@@ -1,5 +1,6 @@
 a{
     text-decoration:none !important;
+    color:gray !important;
 }
 
  .topbar {
@@ -95,10 +96,8 @@ a{
   .card:hover{
       box-shadow : 0 0 10px gray;
       transition:ease-out 0.3s;
-      
-  }
-  .card:hover{
       color:#502eb8 !important;
+      
   }
   .about{
       display:flex;
@@ -190,8 +189,11 @@ a{
       }
       .sidebar-toggler{
         position:absolute;
-        left:1%;
+        left:1rem;
         visibility:visible;
+      }
+      .sidebar-toggler:hover{
+        cursor:pointer;
       }
       @supports ((position: -webkit-sticky) or (position: sticky)) {
         
@@ -214,7 +216,7 @@ a{
     
     }
     
-    .doodle-wrapper{
+    .doodle-wrapper,.footer{
       background-color:#502eb82f;
       overflow:hidden;
     }
