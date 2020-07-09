@@ -23,6 +23,7 @@ a{
 
 /*--------------------- top bar---------------------- */
 .topbar{
+    min-height: 3rem;
     padding:1%;
     position:sticky;
     top:0px;
@@ -114,14 +115,24 @@ span.mouse{
 
 
 /*-------------sidebar-----------------*/
-.sidebar-left,.sidebar-right{
-    min-height:100vh;
+.sidebar-left,.sidebar-right,.content{
+    height:calc(100vh - 3rem);
+    position:sticky;
+    top:3rem;
+    overflow:auto;
 }
 .sidebar-left{
     border-right:0.5px groove gray; 
 }
 .sidebar-right{
     border-left:0.5px groove gray; 
+}
+
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.sidebar-left,.sidebar-right,.content {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 @media (max-width: 576px) {
     .sidebar-right{
@@ -139,6 +150,11 @@ span.mouse{
  .content-wrapper{
      padding:3%;
  }
+
+ /*----------hide scroll bar----------*/
+ .content::-webkit-scrollbar {
+    display: none;
+}
  .quote{
      max-width:100%;
      padding:4%;
