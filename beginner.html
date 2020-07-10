@@ -19,7 +19,7 @@
 
     <header class="topbar">
         
-            <i class="sidebar-toggler" id="toggle"><span class="material-icons">menu</span></i>
+            <i class="sidebar-toggler" id="toggle"><span class="material-icons" id="menu">menu</span><span class="material-icons hidden" id="clear">clear</span></i>
         <div class="title mx-3"><a href="index.html" class="link">The | Noob Coder</a> </div><span class="material-icons mouse">mouse</span>  
     </header>
 
@@ -118,6 +118,16 @@
                 $("#toggle").click(function () {
                     $("#sidebar").toggleClass('show-sidebar');
                     $("#main-body").toggleClass('body-blur');
+                    $("#menu").toggle();
+                    $("#clear").toggle();
+                });
+                $("#main-body").click(function () {
+                    if($("#sidebar").hasClass('show-sidebar')){
+                        $("#sidebar").toggleClass('show-sidebar');
+                        $("#main-body").toggleClass('body-blur');
+                        $("#menu").toggle();
+                        $("#clear").toggle();
+                    }
                 });
             });
         
