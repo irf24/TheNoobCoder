@@ -189,7 +189,7 @@ a {
   .bd-sidebar {
     position: -webkit-sticky;
     position: fixed;
-    width: 200px;
+    width: 220px;
     top: 4rem;
     left: -100%;
     z-index: 1000;
